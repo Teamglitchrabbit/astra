@@ -36,15 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\SceneTransitionDoor.cs" />
+     <Compile Include="Assets\Scripable Objects\SOtemplates\MenuTag1.cs" />
+     <Compile Include="Assets\Scripts\AbilityDisplay1.cs" />
      <Compile Include="Assets\Scripts\CharacterMovment\2D-Character-Controller-master\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\CharacterMovment\Playermovement.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Systems\DoubleClick.cs" />
      <Compile Include="Assets\Scripts\Systems\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Systems\PlayerDoorTransition.cs" />
      <Compile Include="Assets\Scripts\Systems\SceneTransition.cs" />
      <Compile Include="Assets\Scripts\Systems\VectorValue.cs" />
+     <Compile Include="Assets\TagDisplaySetting.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

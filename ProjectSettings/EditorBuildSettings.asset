@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/platformer/plaiformer2.unity
+    path: Assets/Scenes/platformer/Platformer2.unity
     guid: 9c8b4d3ad17f9c145919fdbbd7295443
   - enabled: 1
     path: Assets/Scenes/platformer/Level1.unity
