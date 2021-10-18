@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDoorTransition : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PlayerDoorTransition : MonoBehaviour
 
     GameObject Transitioning;
 
-    SceneTransitionDoor Transitioning_Script;
+    SceneTransitionCode Transitioning_Script;
 
 
 
@@ -20,15 +21,15 @@ public class PlayerDoorTransition : MonoBehaviour
 
    public void OnTriggerEnter2D(Collider2D DoorInfo)
     {
-        Transitioning_Script = DoorInfo.GetComponent<SceneTransitionDoor>();
+        Transitioning_Script = DoorInfo.GetComponent<SceneTransitionCode>();
         isinDoor = true;
     }
 
     public void Update()
     {
-        if (isinDoor && Input.GetButtonDown("Interaction"))
+        if (isinDoor && Transitioning_Script != null && Input.GetButtonDown("Interaction"))
         {
-            Transitioning_Script.MoveScene();
+            SceneManager.LoadScene(Transitioning_Script.SceneCode);
         }
     }
 

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{bf7a0254-adc3-95e1-5f0b-4faddb441f1b}</ProjectGuid>
+    <ProjectGuid>{8ae60876-2e04-8a92-83f3-654ba36ae190}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -36,10 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\PauseMenu.cs" />
-     <Compile Include="Assets\SceneTransitionDoor.cs" />
+     <Compile Include="Assets\SceneTransitionCode.cs" />
+     <Compile Include="Assets\Scripable Objects\SOtemplates\MenuTag1.cs" />
+     <Compile Include="Assets\Scripts\AbilityDisplay1.cs" />
      <Compile Include="Assets\Scripts\CharacterMovment\2D-Character-Controller-master\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\CharacterMovment\Playermovement.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Systems\DoubleClick.cs" />
      <Compile Include="Assets\Scripts\Systems\PlayerCombat.cs" />
      <Compile Include="Assets\Scripts\Systems\PlayerDoorTransition.cs" />
@@ -250,7 +252,7 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -604,37 +606,85 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Cinemachine">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    <Reference Include="Unity.2D.Animation.Runtime">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Path.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Triangle.Runtime">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PsdPlugin">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.001">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Runtime">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.SpriteShape.Runtime">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Animation.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Common.Editor">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/gordo/OneDrive/Desktop/unity_test_projects/Astra&apos;s Adventure, Alpha/astra/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/gordo/Astra&apos;s Adventure, Alpha/Astra Fix/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
