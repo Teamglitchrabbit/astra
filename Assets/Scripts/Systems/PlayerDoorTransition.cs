@@ -8,8 +8,6 @@ public class PlayerDoorTransition : MonoBehaviour
 
     private bool isinDoor = false;
 
-    GameObject Transitioning;
-
     SceneTransitionCode Transitioning_Script;
 
 
